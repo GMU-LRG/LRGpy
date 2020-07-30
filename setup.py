@@ -1,10 +1,17 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
   name="LRGpy",
   version = "0.0.1",
   description = "LRG Python code repsository.",
-  long_description="A Python module containing various useful Python code owned by LRG.",
+  url="https://github.com/GMU-LRG/LRGpy",
+  author="Lattanzi Research Group",
+  author_email="dlattanz@gmu.edu",
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   py_modules=["LRGpy"],
   package_dir={"": "src"},
   classifiers=[
@@ -15,5 +22,11 @@ setup(
     "Operating System :: OS Independent",
     "Natural Language :: English",
     "Topic :: Scientific/Engineering"
+  ],
+  #dependencies
+  install_requires = [
+    "scikit-learn",
+    "matplotlib"
   ]
 )
+

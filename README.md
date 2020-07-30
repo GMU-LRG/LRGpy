@@ -1,29 +1,31 @@
 # LRGpy
 
-LRGpy is a collection of Python code used by the Lattanzi Research Code at George Mason University. This package currently consists of point cloud utilities that are custom implementations of research papers, PCL functions, and CloudCompare utilities.
+LRGpy is a collection of Python code used by the Lattanzi Research Code at George Mason University. This package currently consists of point cloud utilities derived from research papers, CloudCompare utilities, and PCL functions.
 
 ## Installation
 
 Run the following to install:
 
 ```python
-pip instal LRGpy
+pip install LRGpy
 ```
 
-## Example Usage
+## Usage
+
+Example usage
+
+Generate a point cloud from a CloudCompare generated text file:
 
 ```python
-# Import entire LRGpy module:
+# Import the entire LRGpy module:
 import LRGpy
 
-# Generate PointCloud from CloudCompare txt
-LRGpy.PointCloudFromTxt("./cloud.txt")
+cloud = LRGpy.PointCloudFromTxt("./cloud.txt")
 ```
 
 ```python
-# Alternatively, import one function into your own namespace:
+# Alternatively, import just one function into your own namespace:
 from LRGpy import PointCloudFromTxt
 
-# Generate PointCloud from CloudCompare txt
-PointCloudFromTxt("./cloud.txt")
+cloud = PointCloudFromTxt("./cloud.txt")
 ```
