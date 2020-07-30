@@ -9,3 +9,21 @@ Run the following to install:
 ```python
 pip instal LRGpy
 ```
+
+## Example Usage
+
+```python
+# Import entire LRGpy module:
+import LRGpy
+
+# Generate PointCloud from CloudCompare txt
+LRGpy.PointCloudFromTxt("./cloud.txt")
+```
+
+```python
+# Alternatively, import one function into your own namespace:
+from LRGpy import PointCloudFromTxt
+
+# Generate PointCloud from CloudCompare txt
+PointCloudFromTxt("./cloud.txt")
+```
