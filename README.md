@@ -10,11 +10,9 @@ Run the following to install:
 pip install LRGpy
 ```
 
-## Usage
+## Example Usage
 
-Example usage
-
-Generate a point cloud from a CloudCompare generated text file:
+Generate a point cloud from a comma separated text file (such as a CloudCompare output):
 
 ```python
 # Import the entire LRGpy module:
