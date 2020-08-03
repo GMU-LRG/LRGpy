@@ -27,3 +27,12 @@ from LRGpy import PointCloudFromTxt
 
 cloud = PointCloudFromTxt("./cloud.txt")
 ```
+
+## Hello WOrld Documentation
+
+Use LRGpy.HelloWorld() to quickly print "Hello!" to the console
+
+```
+from LRGpy import HelloWorld()
+LRGpy.HelloWorld()
+```
