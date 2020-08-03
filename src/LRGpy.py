@@ -12,7 +12,9 @@ def PlotPointCloud(xyz):
 
 def PointDistance(p1,p2):
     sum = 0
-    for i, v in range(0,2):
+    for i, v in enumerate(2):
         sum += (v-p2[i])**2
     return math.sqrt(sum)
 
+def HelloWorld():
+  print("Hello!")

@@ -1,18 +1,18 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setup(
   name='LRGpy',
-  version = '0.0.1',
+  version = '0.0.3',
   description = 'LRG Python code repsository.',
   url='https://github.com/GMU-LRG/LRGpy',
   author='Lattanzi Research Group',
   author_email='dlattanz@gmu.edu',
   long_description=long_description,
   long_description_content_type='text/markdown',
-  package_dir={'': 'src'},
+  packages=find_packages(),
   classifiers=[
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.6',
